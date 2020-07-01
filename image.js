@@ -20,40 +20,6 @@ function getDomainY (mask) {
   return getDomain(mask, (coordinate) => coordinate.y)
 }
 
-// previousPoint: function (index) {
-//   return this.mask[(index - 1 + this.mask.length) % this.mask.length]
-// },
-// polygonPoints: function () {
-//   return this.mask.map((point) => point.join(',')).join(' ')
-// }
-
-
-//   computed: {
-//     square: function () {
-//       if (this.width && this.height) {
-//         return Math.max(this.width, this.height)
-//       }
-
-//       return undefined
-//     },
-//     squareCorner: function () {
-//       if (this.width && this.height) {
-//         if (this.width > this.height) {
-//           return [
-//             this.domainX[0],
-//             this.domainY[0] + this.height / 2 - this.width / 2
-//           ]
-//         } else {
-//           return [
-//             this.domainX[0] + this.width / 2 - this.height / 2,
-//             this.domainY[0]
-//           ]
-//         }
-//       }
-
-//       return undefined
-//     },
-
 function getLength (domain) {
   return domain[1] - domain[0]
 }
