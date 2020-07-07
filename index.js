@@ -22,7 +22,7 @@ async function maskFacade () {
   const poiRefs = await query.get()
 
   if (poiRefs.empty) {
-    console.error('No POIs found')
+    console.error('No facades to be masked!')
     // process.exit(1)
   } else {
     const poiRef = poiRefs.docs[0]
