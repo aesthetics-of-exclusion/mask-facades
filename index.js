@@ -23,7 +23,7 @@ async function maskFacade () {
 
   if (poiRefs.empty) {
     console.error('No POIs found')
-    process.exit(1)
+    // process.exit(1)
   } else {
     const poiRef = poiRefs.docs[0]
     const poiId = poiRef.id
